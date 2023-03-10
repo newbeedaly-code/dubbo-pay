@@ -5,7 +5,7 @@
     <parent>
         <artifactId>dubbo-pay</artifactId>
         <groupId>cn.newbeedaly</groupId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
