@@ -1,9 +1,11 @@
 package cn.newbeedaly.pay;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@EnableDubbo(scanBasePackages = "cn.newbeedaly")
+@SpringBootApplication(scanBasePackages = "cn.newbeedaly")
 public class PaySpringApplication {
 
     public static void main(String[] args) {
