@@ -1,4 +1,4 @@
-package cn.newbeedaly.order.controller;
+package cn.newbeedaly.pay.order.controller;
 
 import cn.newbeedaly.pay.dto.req.PayQueryReqDTO;
 import cn.newbeedaly.pay.dto.res.PayQueryResDTO;
@@ -17,7 +17,7 @@ public class PayController {
     private PayService payService;
 
     @GetMapping(value = "/{payId}")
-    public PayQueryResDTO getPayInfoByOrderId(@PathVariable("payId") String payId){
+    public PayQueryResDTO getPayInfoByOrderId(@PathVariable("payId") String payId) {
         PayQueryReqDTO payQueryReqDTO = PayQueryReqDTO.builder().payId(payId).build();
         return payService.getPayById(payQueryReqDTO);
     }
